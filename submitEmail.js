@@ -16,9 +16,9 @@ const transporter = nodemailer.createTransport({
 
 });
 
-let sendEmail = (token, email) => {
+const sendEmail = (token, email) => {
     transporter.sendMail({
-        from:'Marcelo Deus <marcelodeus98@outlook.com>',
+        from:'SeuNome <seuemail@email.com>',
         to: email,
         subject: 'Token for password recovery',
         text: 
